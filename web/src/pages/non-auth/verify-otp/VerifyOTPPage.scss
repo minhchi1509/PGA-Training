@@ -1,0 +1,34 @@
+@use 'src/themes/variables' as *;
+
+.VerifyOTPPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 200px;
+
+  &__input {
+    height: 62px;
+    font-size: 34px;
+    min-width: 52px;
+    line-height: 50px;
+    padding: 6px 10px;
+    border-radius: 8px;
+    outline: none;
+    color: $color-primary;
+    border: 2px solid $philippine-gray;
+
+    &.hasValue,
+    &:focus {
+      border-color: $color-primary;
+    }
+  }
+
+  &__note {
+    color: $philippine-gray;
+  }
+
+  &__submitBtn {
+    width: 228px;
+    margin: 16px 0;
+  }
+}

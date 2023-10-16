@@ -1,0 +1,11 @@
+@use 'src/themes/variables' as *;
+
+.NotificationSettingItem {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+  background-color: $bg-gray-3;
+  border-radius: 8px;
+}

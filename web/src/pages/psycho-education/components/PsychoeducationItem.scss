@@ -1,0 +1,21 @@
+@use 'src/themes/variables' as *;
+
+.PsychoeducationItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 20px;
+  border-radius: 6px;
+  border-left-width: 4px;
+  border-left-style: solid;
+  background-color: $bg-gray-3;
+  cursor: pointer;
+
+  &.ARTICLE {
+    border-left-color: $color-success;
+  }
+
+  &.VIDEO {
+    border-left-color: $color-error;
+  }
+}

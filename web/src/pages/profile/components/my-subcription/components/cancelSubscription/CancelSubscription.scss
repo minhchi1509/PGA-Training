@@ -1,0 +1,18 @@
+@use 'src/themes/variables' as *;
+
+.Cancel {
+  &__btn {
+    padding-left: 0 !important;
+    .resume {
+      color: $color-success !important;
+    }
+  }
+  &__success {
+    &--title {
+      color: $font-color-caption;
+    }
+    &--contact {
+      color: $color-primary;
+    }
+  }
+}

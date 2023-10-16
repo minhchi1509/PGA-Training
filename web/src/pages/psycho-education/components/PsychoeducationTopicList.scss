@@ -1,0 +1,15 @@
+@use 'src/themes/variables' as *;
+
+.PsychoeducationTopicList {
+  &__item {
+    font-size: $font-size-small;
+    color: $font-color-caption;
+    line-height: 20px;
+    padding: 8px 14px;
+    cursor: pointer;
+
+    &.selected {
+      color: $font-color-default;
+    }
+  }
+}

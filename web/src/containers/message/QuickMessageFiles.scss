@@ -1,0 +1,33 @@
+@use 'src/themes/variables' as *;
+
+.QuickMessageFiles {
+  display: flex;
+  max-width: 350px;
+  flex-wrap: wrap-reverse;
+  justify-content: flex-end;
+  gap: 6px;
+
+  &.partner {
+    justify-content: flex-start;
+  }
+
+  &__item {
+    border-radius: 10px;
+    background-color: $grey;
+
+    &-otherType {
+      width: 100px;
+      height: 100px;
+      gap: 4px;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      text-transform: uppercase;
+    }
+
+    .ant-image-img {
+      object-fit: contain;
+    }
+  }
+}

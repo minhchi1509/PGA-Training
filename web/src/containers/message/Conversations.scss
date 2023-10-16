@@ -1,0 +1,28 @@
+.Conversations {
+  &__list {
+    height: 678px;
+    overflow: auto;
+    margin: 8px 0;
+
+    .infinite-scroll-component {
+      .ConversationItem {
+        &:not(:first) {
+          margin-top: 8px;
+        }
+      }
+    }
+
+    &-empty {
+      margin-top: 40px;
+    }
+
+    &-loading {
+      display: flex;
+      justify-content: center;
+    }
+
+    &-searchText {
+      margin-top: 16px;
+    }
+  }
+}

@@ -1,0 +1,35 @@
+.HomeworkDetailSection {
+  padding: 20px;
+  flex: 1;
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 24px;
+
+    &-left {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    &-rangeDate {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+
+      .DatePicker {
+        height: 36px;
+      }
+    }
+
+    svg {
+      cursor: pointer;
+    }
+  }
+
+  .TabsHeader {
+    margin: 16px 0;
+  }
+}

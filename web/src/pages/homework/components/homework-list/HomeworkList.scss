@@ -1,0 +1,12 @@
+@use 'src/themes/variables' as *;
+
+.HomeworkList {
+  height: 100%;
+  overflow: auto;
+
+  &.has-border {
+    padding: 6px;
+    border: 1px solid $border-default-color;
+    border-radius: 8px;
+  }
+}

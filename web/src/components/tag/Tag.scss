@@ -1,0 +1,11 @@
+@use 'src/themes/variables' as *;
+
+.Tag {
+  border: none;
+  border-radius: 6px;
+  padding: 3px 8px;
+
+  &.default {
+    background-color: $bg-input-color;
+  }
+}

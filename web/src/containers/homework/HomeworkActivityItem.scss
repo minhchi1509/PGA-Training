@@ -1,0 +1,72 @@
+@use 'src/themes/variables' as *;
+
+.HomeworkActivityItem {
+  padding: 20px;
+  border-radius: 10px;
+
+  &.card {
+    background-color: $bg-gray-3;
+  }
+
+  &.bordered {
+    border: 1px solid $border-default-color;
+
+    .HomeworkActivityItem__content {
+      flex-direction: column;
+    }
+
+    .ActivityCard.result {
+      .ActivityCard__commonContent-files {
+        color: $color-primary;
+      }
+    }
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+
+    &-left {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+
+      &-icon {
+        border-radius: 50%;
+        padding: 5px;
+        color: $activity-color;
+        background: #fff5e6;
+
+        &.rejected {
+          color: $color-error;
+          background: #feeee9;
+        }
+      }
+    }
+
+    &-action {
+      &.ant-btn {
+        font-size: $font-size-caption;
+        font-family: 'Poppins-400';
+      }
+    }
+  }
+
+  &__content {
+    display: flex;
+    gap: 16px;
+    margin-top: 16px;
+
+    .ActivityCard {
+      flex: 1;
+
+      &.result {
+        width: 49%;
+      }
+    }
+
+    .SummaryTable {
+      margin-left: 14px;
+    }
+  }
+}

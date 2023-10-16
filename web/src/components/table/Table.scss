@@ -1,0 +1,43 @@
+@use 'src/themes/variables' as *;
+
+.Table {
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  &.ant-table-wrapper {
+    border: 1px solid $border-default-color;
+    border-radius: 8px;
+    overflow: auto;
+
+    .ant-table {
+      font-size: $font-size-caption;
+
+      &-thead {
+        .ant-table-cell {
+          font-family: 'Poppins-500';
+          color: $color-primary;
+          background-color: $bg-gray-2;
+          padding: 10px 16px 6px 16px;
+
+          &::before {
+            width: 0 !important;
+            // delete separate line on header
+          }
+        }
+      }
+
+      &-tbody {
+        tr {
+          cursor: pointer;
+        }
+      }
+
+      &-cell {
+        border-color: $bg-input-color;
+      }
+    }
+  }
+}

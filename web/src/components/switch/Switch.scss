@@ -1,0 +1,24 @@
+@use 'src/themes/variables' as *;
+
+.Switch {
+  margin-left: 10px;
+  min-width: 0px;
+  width: 24px;
+  height: 14px;
+  &.ant-switch-checked {
+    background-color: $light-green07;
+
+    &:hover:not(.ant-switch-disabled) {
+      background-color: $light-green07;
+    }
+
+    .ant-switch-handle {
+      inset-inline-start: calc(100% - 12px);
+    }
+  }
+  .ant-switch-handle {
+    width: 10px;
+    height: 10px;
+    inset-inline-start: 3px;
+  }
+}

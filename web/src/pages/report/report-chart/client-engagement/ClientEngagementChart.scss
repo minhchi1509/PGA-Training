@@ -1,0 +1,78 @@
+@use 'src/themes/variables' as *;
+
+.ClientEngagementChart {
+  padding: 20px;
+
+  .subTitle {
+    color: #8a8a8a;
+  }
+
+  &__filter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+    width: 469.5px;
+    height: 36px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+
+    &-element {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding: 0px;
+      gap: 10px;
+
+      width: 232px;
+      height: 36px;
+
+      &-date {
+        padding: 10px;
+        border-radius: 10px;
+        background-color: $bg-input-color;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        width: 170px;
+        height: 36px;
+        justify-content: space-between;
+      }
+    }
+
+    .ant-select-selector {
+      height: 36px !important;
+      align-items: center;
+    }
+  }
+
+  &__report {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    // gap: 16px;
+    width: 469.5px;
+    height: 227px;
+    background: #ffffff;
+    border: 2px solid #e1e6ef;
+    border-radius: 8px;
+
+    &-title {
+      align-self: start;
+      color: $color-success;
+    }
+
+    &-chart {
+      width: 433px;
+      height: 170px;
+    }
+  }
+
+  .number-clients {
+    color: $font-color-caption;
+    margin-bottom: 4px;
+  }
+}

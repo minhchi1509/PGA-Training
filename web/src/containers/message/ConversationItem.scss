@@ -1,0 +1,59 @@
+@use 'src/themes/variables' as *;
+
+.ConversationItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  user-select: none;
+  border-radius: 8px;
+  padding: 8px 12px 8px;
+
+  &.unRead {
+    .ConversationItem__info-chat {
+      color: $font-color-default;
+    }
+  }
+
+  &.selected {
+    background-color: $bg-gray;
+  }
+
+  &__info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    .Avatar.ant-avatar {
+      width: 56px;
+      height: 56px;
+      display: flex;
+      justify-content: center;
+
+      .anticon-user svg {
+        width: 28px;
+        height: 28px;
+      }
+    }
+
+    &-text {
+      font-size: $font-size-x-small;
+      color: $font-color-caption;
+      line-height: 15px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+  }
+
+  &__unRead {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: $light-green07;
+  }
+
+  &:hover {
+    background-color: $bg-gray;
+  }
+}

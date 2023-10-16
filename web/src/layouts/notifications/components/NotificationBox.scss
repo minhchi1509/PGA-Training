@@ -1,0 +1,22 @@
+.NotificationBox {
+  max-height: 490px;
+  width: 410px;
+  overflow: auto;
+
+  &__loading {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__today {
+    margin-left: 16px;
+    font-weight: 500;
+  }
+
+  &__earlier {
+    margin-left: 16px;
+    &--margin-top {
+      margin-top: 24px;
+    }
+  }
+}

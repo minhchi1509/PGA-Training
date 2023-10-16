@@ -1,0 +1,24 @@
+.ChartLegend {
+  display: flex;
+  flex-direction: row;
+  &__item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 26px;
+    &--dot {
+      width: 12px;
+      height: 12px;
+      border-radius: 60%;
+      background: #f49cb7;
+      display: inline-block;
+      margin-right: 6px;
+      &.a {
+        background: #a6a7dc;
+      }
+      &.s {
+        background: #35d6af;
+      }
+    }
+  }
+}

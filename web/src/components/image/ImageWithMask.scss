@@ -1,0 +1,55 @@
+@use 'src/themes/variables' as *;
+
+.ImageWithMask {
+  position: relative;
+
+  &:hover {
+    .ImageWithMask__mask {
+      opacity: 1;
+    }
+  }
+
+  &__image,
+  &__ghost,
+  &__mask {
+    border-radius: 8px;
+  }
+
+  &__image {
+    object-fit: cover;
+  }
+
+  &__ghost {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: $white;
+    background: $bg-transparent-black-3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .anticon-play-circle svg {
+      width: 25px;
+      height: 25px;
+    }
+  }
+
+  &__mask {
+    position: absolute;
+    opacity: 0;
+    z-index: 2;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    color: $white;
+    cursor: pointer;
+    transition: opacity 0.3s;
+    background: $bg-transparent-black-8;
+  }
+}

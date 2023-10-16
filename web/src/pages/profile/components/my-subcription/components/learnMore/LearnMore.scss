@@ -1,0 +1,42 @@
+@use 'src/themes/variables' as *;
+
+.LearnMore {
+  align-items: center;
+  color: $color-primary;
+  gap: 6px;
+
+  &-sub-heading {
+    color: $color-success;
+  }
+
+  .info-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+  }
+
+  &-btn {
+    font-size: 13px;
+    font-weight: 400;
+    cursor: pointer;
+  }
+
+  &-heading {
+    margin-bottom: 8px;
+  }
+  &-content {
+    margin-bottom: 8px;
+  }
+  &-description {
+    margin-bottom: 8px;
+
+    .dot-icon {
+      width: 14px;
+      height: 14px;
+      color: $color-information;
+    }
+  }
+}

@@ -1,0 +1,81 @@
+@use 'src/themes/variables' as *;
+
+.AssignHomeworkTopic {
+  &__header {
+    display: flex;
+    align-items: center;
+
+    &-divider {
+      &.ant-divider {
+        margin: 0 10px 0 0;
+        border-inline-start: 4px solid $border-default-color;
+        border-radius: 8px;
+      }
+    }
+  }
+
+  .ant-collapse {
+    .ant-collapse-item-active,
+    .AssignHomeworkTopic__header.active {
+      .ant-divider {
+        &.Activity {
+          border-color: $activity-color;
+        }
+
+        &.Questionnaire {
+          border-color: $question-color;
+        }
+
+        &.WrittenTask {
+          border-color: $written-color;
+        }
+
+        &.Video {
+          border-color: $video-color;
+        }
+      }
+    }
+  }
+
+  .Collapse {
+    &.ant-collapse {
+      .ant-collapse-header {
+        padding-left: 0;
+      }
+
+      .ant-collapse-content-box {
+        padding-left: 14px;
+      }
+    }
+
+    &__header {
+      padding-left: 0;
+    }
+  }
+
+  &__content {
+    font-size: 13px;
+    line-height: 20px;
+    color: $font-color-caption;
+    cursor: pointer;
+
+    &.active {
+      color: $font-color-default;
+    }
+
+    &:not(:first-child) {
+      margin-top: 16px;
+    }
+
+    &.add-topic {
+      color: $color-primary;
+    }
+  }
+
+  &__scrollableDiv {
+    max-height: 508px;
+    margin-right: -36px;
+    padding-right: 20px;
+    overflow: auto;
+  }
+}

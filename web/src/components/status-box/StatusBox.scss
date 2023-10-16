@@ -1,0 +1,65 @@
+.StatusBox__container {
+  display: flex;
+  min-width: 59px;
+  width: fit-content;
+  height: 21px;
+  border-radius: 6px;
+  padding: 3px 8px;
+  align-items: center;
+
+  &.discharge {
+    width: 72px;
+  }
+
+  &.ACTIVE,
+  &.COMPLETED {
+    background: #e6fbf3;
+    .StatusBox__status {
+      color: #09ce82;
+    }
+  }
+
+  &.SKIPPED {
+    background-color: #fff5e5;
+    .StatusBox__status {
+      color: #ffac30;
+    }
+  }
+
+  &.PENDING {
+    background: #fff5e6;
+    .StatusBox__status {
+      color: #ffac30;
+    }
+  }
+
+  &.INACTIVE,
+  &.DISCHARGED,
+  &.CANCELED,
+  &.REJECTED {
+    background: rgba(243, 79, 29, 0.1);
+    .StatusBox__status {
+      color: #ff7777;
+    }
+  }
+
+  &.TRIALING {
+    background: #f5eeff;
+    color: #a25aff;
+  }
+
+  .StatusBox__dot {
+    width: 6px;
+    height: 6px;
+    background: #09ce82;
+    border-radius: 6px;
+    margin-right: 6px;
+  }
+
+  .StatusBox__status {
+    font-family: 'Poppins-400';
+    font-weight: 400;
+    font-size: 10px;
+    height: 15px;
+  }
+}

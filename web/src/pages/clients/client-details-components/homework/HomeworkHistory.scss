@@ -1,0 +1,23 @@
+.HomeworkHistory {
+  &__range {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin: 24px 0 16px 0;
+
+    .DatePicker {
+      height: 36px;
+    }
+  }
+
+  &__list {
+    height: 580px;
+    overflow: auto;
+
+    .HomeworkHistoriesByDate {
+      &:not(:first-child) {
+        margin-top: 18px;
+      }
+    }
+  }
+}

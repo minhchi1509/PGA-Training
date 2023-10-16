@@ -1,0 +1,53 @@
+@use 'src/themes/variables' as *;
+
+.PreviewChatFiles {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  overflow: auto;
+
+  &__item {
+    padding: 5px;
+    border-radius: 10px;
+    background-color: $grayscale30;
+    position: relative;
+    user-select: none;
+
+    &-otherType {
+      width: 70px;
+      height: 70px;
+      gap: 4px;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      text-transform: uppercase;
+    }
+
+    &-close {
+      position: absolute;
+      top: 5px;
+      right: 5px;
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      color: $white;
+      background-color: $black;
+
+      svg {
+        width: 8px;
+        height: 8px;
+      }
+    }
+  }
+
+  .Image .ant-image-img {
+    object-fit: contain;
+    border-radius: 10px;
+  }
+}

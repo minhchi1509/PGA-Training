@@ -1,0 +1,10 @@
+.HomeworkDetailsHistoryTab {
+  &__list {
+    height: 597px;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 16px;
+  }
+}

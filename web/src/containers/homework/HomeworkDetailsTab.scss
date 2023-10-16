@@ -1,0 +1,127 @@
+@use 'src/themes/variables' as *;
+
+.HomeworkDetailsTab {
+  padding: 16px;
+  border: 1px solid $border-default-color;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  &__header {
+    padding: 16px 16px 30px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: $bg-gray;
+
+    &-title {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    &-content {
+      display: flex;
+      flex-direction: column;
+
+      &--formTitle {
+        height: 21px;
+        margin-bottom: 4px;
+      }
+
+      &--row {
+        display: flex;
+        gap: 80px;
+      }
+
+      &--col {
+        width: 330px;
+        &-2 {
+          display: flex;
+          gap: 16px;
+        }
+      }
+
+      &--reminder {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 223px;
+
+        .FormItem {
+          width: 107px;
+          margin: 0;
+        }
+      }
+
+      &--repeat {
+        display: flex;
+        gap: 10px;
+
+        .FormItem {
+          width: 100%;
+        }
+      }
+
+      &--dayOfWeek,
+      &--endDate {
+        display: flex;
+        align-items: center;
+
+        .FormItem {
+          margin: 0;
+        }
+      }
+
+      &--endDate {
+        justify-content: space-between;
+
+        &-timePicker {
+          width: 125px;
+          margin: 0 10px 0 6px !important;
+        }
+
+        &-datePicker {
+          width: 140px;
+          margin: 0 0 0 6px !important;
+        }
+      }
+
+      &--dayOfWeek {
+        justify-content: space-between;
+
+        .ant-btn {
+          border-radius: 6px;
+          width: 43.71px;
+          height: 21px;
+          box-shadow: none;
+          border: none;
+          padding: 0;
+
+          &-default {
+            background-color: $bg-input-color;
+          }
+        }
+      }
+    }
+  }
+
+  &__footer {
+    margin-right: 40px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+
+    .Button {
+      width: 160px;
+    }
+  }
+}

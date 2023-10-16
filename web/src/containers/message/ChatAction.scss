@@ -1,0 +1,53 @@
+@use 'src/themes/variables' as *;
+
+.ChatAction {
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+
+  &__icon {
+    width: 24px;
+    height: 24px;
+    margin-bottom: 8px;
+    cursor: pointer;
+  }
+
+  &__input {
+    flex: 1;
+    border-radius: 10px;
+    max-width: 525px;
+    background-color: $bg-input-color;
+
+    &-file {
+      padding: 10px;
+    }
+  }
+
+  &__textarea.ant-input {
+    padding: 10px;
+    max-height: 200px;
+    line-height: 18px;
+    border: none;
+    box-shadow: none;
+
+    &:focus {
+      background-color: $bg-input-color;
+      border: none;
+      box-shadow: none;
+    }
+  }
+
+  .Upload.ant-upload-wrapper {
+    height: 32px;
+  }
+
+  .PreviewChatFiles {
+    padding: 10px;
+  }
+
+  &__readOnly.ant-btn {
+    pointer-events: none;
+    font-family: 'Poppins-400';
+    font-size: $font-size-small;
+  }
+}

@@ -1,0 +1,41 @@
+@use 'src/themes/variables' as *;
+
+.ClientFiles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  gap: 16px;
+  width: 1020px;
+  height: 742px;
+
+  &__header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__btnUpload {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 24px 0px 16px;
+    gap: 6px;
+    width: 188px;
+    height: 40px;
+    color: #19bcfe;
+    border: 1.5px dashed #19bcfe;
+    border-radius: 10px;
+    cursor: pointer;
+
+    .textBtn {
+      font-family: 'Poppins-500';
+    }
+  }
+
+  &__removeDescription {
+    color: $philippine-gray;
+  }
+}

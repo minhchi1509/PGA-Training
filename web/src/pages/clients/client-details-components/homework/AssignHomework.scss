@@ -1,0 +1,66 @@
+@use 'src/themes/variables' as *;
+
+.AssignHomework {
+  display: flex;
+
+  &__topic {
+    width: 230px;
+    padding: 20px;
+    border-right: 1px solid $border-default-color;
+  }
+
+  &__tasks {
+    width: 394px;
+    padding: 20px;
+    border-right: 1px solid $border-default-color;
+  }
+
+  &__assigned {
+    width: 394px;
+    padding: 20px;
+
+    &-total {
+      font-size: 10px;
+      padding: 3px 8px;
+      border-radius: 6px;
+      color: $dark-violet;
+      background-color: $light-violet;
+    }
+
+    &-list {
+      margin: 16px 0;
+      padding: 6px;
+      height: 593px;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      overflow-y: auto;
+      border: 1px solid $border-default-color;
+      border-radius: 8px;
+    }
+
+    &-actions {
+      display: flex;
+      gap: 10px;
+
+      .Button {
+        flex: 1;
+      }
+    }
+  }
+
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background-color: #f4f4f4;
+    border-radius: 100px;
+    margin: 3px 0;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: #c9c9c9;
+    border-radius: 100px;
+  }
+}

@@ -1,0 +1,198 @@
+@use 'src/themes/variables' as *;
+
+.MySubcription {
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+
+  .heading {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    width: 980px;
+    height: 24px;
+    padding: 20px 0;
+  }
+
+  .btn {
+    display: flex;
+    flex-direction: row;
+    width: 980px;
+    gap: 10px;
+    padding: 0 20px;
+
+    &.cancel {
+      align-items: flex-start;
+      width: 168px;
+      color: $bg-error;
+      margin-bottom: 20px;
+      padding: 0;
+    }
+  }
+
+  .current-pricing-plan {
+    color: $color-primary;
+  }
+
+  .footer {
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 20px;
+  }
+
+  .divider-footer {
+    margin: 0;
+  }
+
+  .pricing-loading {
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .pricing-cards-subcription {
+    display: flex;
+    gap: 16px;
+    padding: 20px 0;
+
+    &-time{
+      padding: 0 0 50px 0;
+    }
+
+    .cancel-time-text{
+      white-space: pre-line;
+      color: $color-error;
+    }
+
+    .card {
+      width: 100%;
+      max-width: 370px;
+      border-radius: 10px;
+
+      &.active {
+        border-top: 5px solid $color-success;
+        box-shadow: 0px 7px 20px rgba(0, 0, 0, 0.1);
+      }
+
+      .ant-card-body {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+      }
+    }
+
+    .package-name {
+      color: $color-success;
+    }
+
+    .package-price {
+      display: flex;
+      gap: 8px;
+
+      .currency {
+        margin: 7px 0 -7px;
+      }
+    }
+
+    .license {
+      font-family: 'Poppins-500';
+    }
+
+    .divider {
+      margin: 10px 0;
+    }
+
+    .package-description {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 10px;
+      margin-bottom: 14px;
+    }
+
+    .learn-more {
+      align-items: center;
+      color: $color-primary;
+      gap: 6px;
+    }
+
+    .info-icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+    }
+
+    .info-icon {
+      background-color: $grey;
+    }
+
+    .plan-container {
+      margin-bottom: 10px;
+    }
+
+    .button {
+      width: 100%;
+
+      &.active {
+        color: white;
+        background-color: $color-primary;
+      }
+
+      &.disable {
+        background-color: $color-offline;
+        color: white;
+      }
+    }
+  }
+
+  .PricingPackage__modal {
+    .ant-modal-content {
+      padding: 20px;
+      gap: 10px;
+    }
+  }
+}
+
+.MySubcription-main-package {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  .heading-package {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 4px;
+    width: 310px;
+    height: 40px;
+  }
+
+  .money {
+    font-size: 45px;
+    color: $light-green07;
+  }
+
+  .month {
+    width: 50px;
+    height: 34px;
+    display: flex;
+    align-items: flex-end;
+  }
+}
+
+.MySubcription-main-package,
+.MySubcription {
+  .plan-select-text {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+}

@@ -1,0 +1,22 @@
+@use 'src/themes/variables' as *;
+
+.RegisterPage {
+  &__container {
+    &-heading {
+      margin-bottom: 16px;
+    }
+
+    &-heading,
+    &-endText {
+      text-align: center !important;
+      font-size: 12px;
+    }
+  }
+  &__errorMsg {
+    margin-bottom: 16px;
+  }
+  .ant-checkbox-checked .ant-checkbox-inner {
+    background-color: $light-green07 !important;
+    border-color: $light-green07 !important;
+  }
+}

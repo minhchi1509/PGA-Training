@@ -1,0 +1,96 @@
+@use 'src/themes/variables' as *;
+
+.CreateNewProfilePage {
+  background-color: $bg-input-color;
+  padding: 70px 0;
+
+  &__header {
+    text-align: center;
+    padding-bottom: 40px;
+
+    &-logo {
+      margin-bottom: 16px;
+    }
+  }
+
+  &__form {
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 1100px;
+    border-radius: 8px;
+    background-color: $white;
+    gap: 16px;
+    display: flex;
+    flex-direction: column;
+
+    &-upload {
+      .ant-card-body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 16px;
+      }
+
+      .Text.caption {
+        color: $font-color-caption;
+      }
+
+      .Text.headline {
+        font-weight: 400;
+      }
+
+      &-avt {
+        width: 70px;
+        height: 70px;
+        margin-bottom: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $bg-empty-color;
+
+        &.ant-avatar > img {
+          object-fit: contain;
+        }
+      }
+
+      .Text.error {
+        color: $color-error;
+      }
+    }
+
+    &-clinicOwner,
+    &-clinicInfo {
+      .Text.headline {
+        font-weight: 400;
+      }
+
+      .ant-card-body {
+        margin-top: 16px;
+      }
+
+      &-wrapper {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+
+        .FormItem {
+          flex: 1;
+        }
+      }
+    }
+
+    &-submit-button {
+      width: fit-content;
+      margin-left: auto;
+    }
+
+    .ant-form-item-required {
+      justify-content: flex-end;
+      flex-direction: row-reverse;
+
+      &::before {
+        margin-inline-start: 3px;
+      }
+    }
+  }
+}

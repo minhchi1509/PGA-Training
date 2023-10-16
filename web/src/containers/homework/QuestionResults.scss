@@ -1,0 +1,215 @@
+@use 'src/themes/variables' as *;
+
+.QuestionResults {
+  .ActivityCard {
+    &__header {
+      margin: 16px 0;
+    }
+  }
+
+  &__QA {
+    &-question {
+      margin-bottom: 6px;
+    }
+
+    &-result {
+      margin-left: 15px;
+    }
+
+    &-formHeader {
+      &-title {
+        color: $font-color-caption;
+      }
+
+      &-description {
+        margin: 24px 0;
+        font-size: $font-size-caption;
+
+        div {
+          padding: 16px;
+          border-radius: 8px;
+          background-color: $bg-gray-3;
+
+          p {
+            &:not(:last-child) {
+              margin-bottom: 10px;
+            }
+
+            .description-order {
+              display: inline-flex;
+              align-items: center;
+              justify-content: center;
+              line-height: 16px;
+              color: $white;
+              background-color: $color-primary;
+              width: 16px;
+              height: 16px;
+              border-radius: 50%;
+            }
+          }
+        }
+      }
+    }
+
+    &-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      &:not(:last-child) {
+        margin-bottom: 24px;
+      }
+
+      &-label {
+        max-width: 570px;
+        display: flex;
+        font-size: $font-size-caption;
+        line-height: 16px;
+      }
+
+      &-value {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+
+        &-option {
+          width: 32px;
+          height: 32px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 32px;
+          background: $bg-gray-3;
+          color: $font-color-caption;
+
+          &.checked {
+            color: $white;
+            background-color: $color-primary;
+          }
+        }
+      }
+    }
+
+    &-answerText {
+      width: 100%;
+      padding: 10px 16px;
+      border-radius: 8px;
+      border: 1px solid $border-default-color;
+    }
+
+    &-answerChoices {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+
+      .ant-checkbox-wrapper {
+        & + .ant-checkbox-wrapper {
+          margin-inline-start: 0;
+        }
+
+        &-checked .ant-checkbox-inner {
+          border-color: $color-primary;
+          background-color: $color-primary;
+        }
+
+        &-disabled {
+          .ant-checkbox-inner {
+            &::after {
+              border-color: $white;
+            }
+          }
+
+          span {
+            color: $font-color-default;
+          }
+        }
+      }
+
+      .ant-radio-wrapper {
+        color: $font-color-default;
+        cursor: text;
+
+        &-checked {
+          .ant-radio-inner {
+            border-color: $color-primary;
+            background-color: $color-primary;
+
+            &::after {
+              background-color: $color-primary;
+              border: 3px solid $white;
+            }
+          }
+        }
+
+        &.ant-radio-wrapper-checked.ant-radio-wrapper-disabled {
+          .ant-radio-inner::after {
+            transform: scale(0.9);
+          }
+        }
+      }
+    }
+
+    &:not(:first-child) {
+      margin-top: 16px;
+    }
+  }
+
+  &__scores {
+    display: flex;
+    gap: 16px;
+
+    &-table {
+      .Text {
+        margin-bottom: 8px;
+      }
+
+      &.summary {
+        max-width: 45%;
+      }
+    }
+  }
+
+  &__collapse {
+    &.ant-collapse.ant-collapse-icon-position-end {
+      .ant-collapse {
+        &-header {
+          padding: 16px 0;
+
+          .ant-collapse-expand-icon {
+            flex: 2;
+            padding-inline-start: 0;
+            color: $philippine-gray;
+          }
+
+          .ant-collapse-header-text {
+            flex: 1;
+            max-width: 300px;
+
+            .Text {
+              &.caption {
+                color: $font-color-caption;
+                font-family: 'Poppins-400';
+              }
+            }
+          }
+        }
+
+        &-content {
+          border: 1px solid $border-default-color;
+          border-radius: 8px;
+          padding: 20px;
+
+          &-box {
+            padding: 0;
+          }
+        }
+      }
+    }
+
+    &-header {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+  }
+}

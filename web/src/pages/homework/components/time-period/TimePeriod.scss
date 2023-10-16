@@ -1,0 +1,134 @@
+@use 'src/themes/variables' as *;
+
+.TimePeriod {
+  &__modal {
+    .ant-modal-content {
+      padding: 20px;
+    }
+  }
+  &__form {
+    gap: 8px;
+    display: flex;
+    flex-direction: column;
+  }
+  &__footer {
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    .button {
+      width: 100% !important;
+    }
+  }
+  &__time-picker {
+    .ant-picker {
+      height: 48px;
+      width: 100%;
+      background: $bg-input-color !important;
+      border: none;
+      border-radius: 10px;
+      &.ant-picker-status-error {
+        border: solid #ff7777 1px;
+      }
+    }
+  }
+  &__summary {
+    margin-top: 16px;
+    &-text {
+      padding: 10px 16px;
+      border-radius: 6px;
+      background-color: #e9f8ff;
+      margin-top: 10px;
+      .Text {
+        color: $color-primary;
+      }
+    }
+  }
+
+  &__body {
+    &-hour {
+      display: flex;
+      gap: 4px;
+
+      &-select {
+        // margin-right: 4px;
+        // margin-left: 8px;
+        gap: 4px;
+        .ant-picker {
+          height: 48px;
+          background: $bg-input-color !important;
+          border: none;
+          &.ant-picker-status-error {
+            border: solid #ff7777 1px;
+          }
+        }
+      }
+      .FormItem {
+        margin-bottom: 0;
+      }
+    }
+    &-time {
+      display: flex;
+      gap: 4px;
+      .caption {
+        gap: 4px;
+        height: 48px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+      }
+    }
+
+    &-repeatForm {
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+
+      .FormItem {
+        width: 100%;
+      }
+    }
+
+    &-dayOfWeekForm {
+      display: flex;
+      justify-content: space-between;
+
+      .ant-btn {
+        border-radius: 8px;
+        width: 43px;
+        box-shadow: none;
+
+        &-default {
+          background-color: $bg-input-color;
+          border: none;
+        }
+      }
+    }
+
+    &-endTimeForm {
+      display: flex;
+      margin-bottom: 16px;
+
+      .caption {
+        margin-right: 6px;
+        height: 48px;
+        display: flex;
+        align-items: center;
+
+        &:nth-child(3) {
+          margin-left: 10px;
+        }
+      }
+
+      .FormItem {
+        margin-bottom: 0;
+        width: 100%;
+
+        .suffix-text {
+          color: $font-color-caption;
+        }
+      }
+    }
+  }
+}

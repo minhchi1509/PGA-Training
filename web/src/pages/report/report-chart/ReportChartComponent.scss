@@ -1,0 +1,23 @@
+@use 'src/themes/variables' as *;
+
+.ReportComponent {
+  .CommonContent__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px;
+    // height: 502px;
+  }
+
+  &__left {
+    flex: 1;
+    border-right: 1px solid $border-default-color;
+    // height: 502px;
+  }
+
+  &__right {
+    flex: 1;
+    // height: 502px;
+  }
+}

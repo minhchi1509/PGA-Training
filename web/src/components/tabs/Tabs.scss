@@ -1,0 +1,68 @@
+@use 'src/themes/variables' as *;
+
+.Tabs {
+  &.ant-tabs {
+    .ant-tabs {
+      &-nav {
+        margin-bottom: 0;
+        padding: 3px 20px 0 20px;
+        border-radius: 8px;
+        background-color: $bg-gray-2;
+      }
+
+      &-ink-bar {
+        height: 3px;
+        background-color: $bg-success;
+        border-radius: 10px 10px 0px 0px;
+      }
+
+      &-tab {
+        color: $font-color-caption;
+        font-family: 'Poppins-500';
+
+        .ant-tabs-tab-btn {
+          color: $font-color-caption;
+        }
+
+        &-active {
+          .ant-tabs-tab-btn {
+            color: $font-color-default;
+            text-shadow: none;
+          }
+        }
+
+        & + .ant-tabs-tab {
+          margin: 0 0 0 30px;
+        }
+      }
+    }
+
+    // css only secondary tab header
+    &.TabsHeader.secondary {
+      &.ant-tabs {
+        .ant-tabs {
+          &-nav {
+            padding: 0 10px;
+            border-radius: 0;
+            background-color: transparent;
+            border-top: 1px solid $border-default-color;
+
+            &::before {
+              border-color: $border-default-color;
+            }
+          }
+
+          &-tab {
+            padding: 10px 0;
+            line-height: 16px;
+            font-size: $font-size-caption;
+          }
+
+          &-ink-bar {
+            height: 0;
+          }
+        }
+      }
+    }
+  }
+}

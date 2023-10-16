@@ -1,0 +1,55 @@
+@use 'src/themes/variables' as *;
+
+.Dass {
+  width: 58%;
+  padding: 20px;
+  padding-top: 16px;
+  border-right: 1px solid $color-offline;
+  &__item {
+    margin-bottom: 40px;
+    &--title {
+      margin-top: 12px;
+    }
+    &--loading {
+      height: 200px;
+      text-align: center;
+      padding-top: 80px;
+    }
+  }
+  &__chart {
+    &--btn {
+      &-severity {
+        cursor: pointer;
+      }
+    }
+    &--title {
+      color: $color-success;
+      margin-bottom: 16px;
+    }
+    &--container {
+      margin-top: 22px;
+      border-radius: 8px;
+      padding: 20px;
+      border: 1px solid $color-offline;
+    }
+    &--line {
+      height: 380px;
+      display: flex;
+      flex-direction: row;
+    }
+    &--svg {
+      flex: 1;
+      margin-right: 20px;
+    }
+    &--footer {
+      margin-top: 20px;
+      display: flex;
+      justify-content: space-between;
+      &-title {
+        font-size: 12px;
+        text-decoration: underline;
+        color: $color-primary;
+      }
+    }
+  }
+}

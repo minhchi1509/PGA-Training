@@ -1,0 +1,87 @@
+@use 'src/themes/variables' as *;
+
+.Chat {
+  display: flex;
+  flex-direction: column;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 6px;
+    padding-right: 20px;
+
+    &-profile {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    &-action.ant-btn.noBorder {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background-color: $grey;
+      box-shadow: none;
+      color: $font-color-default;
+    }
+
+    &-delete.ant-btn {
+      font-family: 'Poppins-400';
+      line-height: 20px;
+      font-size: $font-size-small;
+      color: $font-color-default;
+
+      &:hover {
+        color: $font-color-default;
+      }
+
+      .anticon-delete {
+        color: $color-error;
+
+        svg {
+          width: 16px;
+          height: 16px;
+        }
+      }
+    }
+
+    &-list.ant-dropdown-menu {
+      padding: 10px;
+
+      .ant-dropdown-menu-item {
+        width: 96px;
+        padding: 10px 6px;
+      }
+    }
+  }
+
+  &__wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    max-height: 692px;
+    overflow: auto;
+  }
+
+  &__content {
+    flex: 1;
+    max-height: 640px;
+    padding: 10px 0;
+    overflow: auto;
+    border-top: 1px solid $border-default-color;
+
+    &.noRoom {
+      border: none;
+    }
+  }
+
+  &__action {
+    padding-top: 10px;
+    border-top: 1px solid $border-default-color;
+
+    &.readOnly {
+      margin-right: 20px;
+      border-style: none;
+    }
+  }
+}

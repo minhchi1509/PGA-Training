@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "705376031711",
+    "project_id": "react-native-training-872ef",
+    "storage_bucket": "react-native-training-872ef.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:705376031711:android:d28f039f33bc2ce1cfea6a",
+        "android_client_info": {
+          "package_name": "com.reactnativetraining"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "705376031711-uj3m4p5oqd0ah94glu1atn8udubird94.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDflXhFJFa6sO8J9ORBKFG5Gp1X23aA8UM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "705376031711-uj3m4p5oqd0ah94glu1atn8udubird94.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

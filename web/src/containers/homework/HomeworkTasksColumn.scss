@@ -1,0 +1,54 @@
+@use 'src/themes/variables' as *;
+
+.HomeworkTasksColumn {
+  &__search {
+    margin: 16px 0;
+  }
+
+  &__note {
+    color: $font-color-caption;
+  }
+
+  &__list {
+    height: 447px;
+    padding: 6px;
+    border-radius: 8px;
+    border: 1px solid $border-default-color;
+    overflow-y: auto;
+
+    &.all {
+      height: 563px;
+      margin-top: 16px;
+    }
+  }
+
+  &__item {
+    &:not(:first-child) {
+      margin-top: 4px;
+    }
+  }
+
+  &__collapse {
+    margin-top: 16px;
+    &.Collapse.ant-collapse {
+      .ant-collapse {
+        &-header {
+          padding: 12px;
+          border-radius: 10px !important;
+          color: $color-primary;
+          border: 1px solid $border-active-color;
+        }
+
+        &-content-box {
+          padding: 4px 0 0 0;
+        }
+
+        &-item {
+          &:not(:first-child) {
+            margin-top: 16px;
+          }
+        }
+      }
+    }
+  }
+}

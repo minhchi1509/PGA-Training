@@ -1,0 +1,33 @@
+@use 'src/themes/variables' as *;
+
+.HomeworkTaskRow {
+  background-color: $bg-gray-3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4px;
+  padding: 12px 16px;
+  border-left: 4px solid;
+  border-radius: 6px;
+  cursor: pointer;
+
+  &.Activity {
+    border-left-color: $color-warning;
+  }
+  &.Questionnaire {
+    border-left-color: $dark-violet;
+  }
+  &.WrittenTask {
+    border-left-color: $color-success;
+  }
+
+  &__icons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    & > * {
+      cursor: pointer;
+    }
+  }
+}

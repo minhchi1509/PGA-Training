@@ -1,0 +1,95 @@
+@use 'src/themes/variables' as *;
+
+.ActivityCard {
+  padding: 0;
+
+  &.card {
+    padding: 16px 20px 16px 10px;
+    border-radius: 10px;
+    background-color: $white;
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 5px;
+
+    &-divider {
+      width: 4px;
+      height: 24px;
+      background: #abb3fe;
+      border-radius: 10px;
+    }
+  }
+
+  &.comment {
+    .ActivityCard__header-divider {
+      background-color: #dc94ff;
+    }
+  }
+
+  &__commonContent {
+    margin-left: 15px;
+
+    &-borderedText {
+      padding: 10px 16px;
+      border: 1px solid $border-default-color;
+      border-radius: 8px;
+
+      &.comment {
+        position: relative;
+        flex: 1;
+
+        &::before {
+          content: '';
+          position: absolute;
+          top: 50%;
+          right: 100%;
+          transform: translateY(-50%);
+          width: 10px;
+          height: 10px;
+          border-width: 30px;
+          border: solid transparent;
+          border-top-width: 5px;
+          border-right-width: 5px;
+          border-bottom-width: 5px;
+          border-right-color: $border-default-color;
+        }
+      }
+    }
+
+    &-comment {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    &-files {
+      margin-top: 8px;
+      display: flex;
+      gap: 6px;
+      align-items: center;
+
+      &-icon {
+        width: 24px;
+        height: 24px;
+        padding: 5px;
+        background: $bg-gray;
+        border-radius: 6px;
+      }
+    }
+
+    &-files {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-top: 6px;
+    }
+
+    &-file {
+      border-radius: 8px;
+      object-fit: cover;
+    }
+  }
+}

@@ -1,0 +1,50 @@
+@use 'src/themes/variables' as *;
+
+.ImgContainer {
+  min-height: 100%;
+  display: flex;
+
+  &__left {
+    display: flex;
+    flex: 1;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 120px;
+    color: $white;
+    background-repeat: no-repeat;
+    background-size: auto;
+
+    img {
+      height: 100%;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+    }
+
+    &-container {
+      z-index: 2;
+      max-width: 620px;
+    }
+
+    &-logo {
+      width: fit-content;
+      font-family: 'Poppins-600';
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      margin-bottom: 50px;
+      font-size: $font-size-caption;
+    }
+
+    &-title {
+      margin-bottom: 16px;
+    }
+  }
+
+  &__right {
+    width: 584px;
+    margin-top: 125px;
+    padding: 0 132px;
+  }
+}

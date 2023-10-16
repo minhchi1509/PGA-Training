@@ -1,0 +1,17 @@
+@use 'src/themes/variables' as *;
+
+.ProfilePage {
+  &__wrapper {
+    .CommonContent__content {
+      padding: 0;
+    }
+
+    .TabContainer {
+      padding: 3px 20px 0 20px;
+
+      .ant-tabs-nav {
+        padding: 0;
+      }
+    }
+  }
+}

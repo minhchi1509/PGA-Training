@@ -1,0 +1,55 @@
+@use 'src/themes/variables' as *;
+
+.container {
+  margin: auto;
+  display: flex;
+  max-width: 320px;
+  margin-top: 200px;
+
+  &.resend {
+    max-width: 480px;
+
+    .more-info-text {
+      max-width: 320px;
+      margin: auto;
+    }
+  }
+
+  .confirm-email-icon {
+    display: block;
+    margin: auto;
+    width: 64px;
+    height: 64px;
+  }
+
+  .confirm-email-text {
+    white-space: nowrap;
+  }
+
+  .info-box {
+    padding: 10px 16px;
+    display: flex;
+    align-items: center;
+    background-color: $bg-info-color;
+    border-radius: 8px;
+    gap: 16px;
+
+    .info-icon {
+      width: 24px;
+      height: 24px;
+      overflow: visible;
+    }
+  }
+
+  .more-info-text {
+    color: $font-color-caption;
+  }
+
+  .end-text {
+    text-align: center;
+
+    .link {
+      font-size: $font-size-caption;
+    }
+  }
+}

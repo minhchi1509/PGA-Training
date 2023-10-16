@@ -1,0 +1,17 @@
+.LoginPage {
+  &__container {
+    &-heading {
+      margin-bottom: 16px;
+    }
+
+    &-heading,
+    &-endText {
+      text-align: center !important;
+      font-size: 12px;
+    }
+  }
+
+  &__errorMsg {
+    margin-bottom: 16px;
+  }
+}

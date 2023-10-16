@@ -1,0 +1,13 @@
+@use 'src/themes/variables' as *;
+
+.SelectButton {
+  font-family: 'Poppins-500';
+  width: 100%;
+  font-size: 13px;
+
+  .ant-select-selector {
+    align-items: center;
+    font-size: 13px !important;
+    height: 48px !important;
+  }
+}

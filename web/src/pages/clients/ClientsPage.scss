@@ -1,0 +1,26 @@
+@use 'src/themes/variables' as *;
+
+.ClientsPage {
+  &__inviteBtn {
+    &.ant-btn {
+      &:hover {
+        color: $white;
+        background-color: $color-primary;
+      }
+    }
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+
+  &__dischargeModal {
+    &-confirm-text {
+      text-align: center !important;
+      color: $font-color-caption;
+    }
+  }
+}

@@ -1,0 +1,22 @@
+@use 'src/themes/variables' as *;
+
+.badge {
+  .ant-badge-count {
+    font-size: 10px;
+    height: 21px;
+    border-radius: 6px;
+  }
+
+  &.green {
+    .ant-badge-count {
+      color: $color-success;
+      background-color: #eafcf7;
+    }
+  }
+  &.violet {
+    .ant-badge-count {
+      color: $dark-violet;
+      background-color: $light-violet;
+    }
+  }
+}

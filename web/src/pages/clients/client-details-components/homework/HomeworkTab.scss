@@ -1,0 +1,24 @@
+@use 'src/themes/variables' as *;
+
+.HomeworkTab {
+  padding: 0;
+  display: flex;
+
+  &__tasks {
+    padding: 20px;
+    flex: 1;
+    min-width: 670px;
+    max-width: 670px;
+    padding-right: 20px;
+    border-right: 1px solid $border-default-color;
+  }
+
+  &__history {
+    width: 100%;
+    padding: 20px;
+  }
+
+  &__removeDescription {
+    color: $philippine-gray;
+  }
+}

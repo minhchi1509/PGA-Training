@@ -1,0 +1,15 @@
+.ChartLabelTracker {
+  height: 176px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  &__item {
+    flex: 1;
+    align-items: center;
+    justify-items: center;
+    img {
+      margin-top: -20px;
+      margin-right: -5px;
+    }
+  }
+}

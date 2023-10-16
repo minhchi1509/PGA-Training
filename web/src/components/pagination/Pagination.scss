@@ -1,0 +1,31 @@
+@use 'src/themes/variables' as *;
+
+.Pagination {
+  &.ant-pagination {
+    li {
+      width: 48px;
+      height: 48px;
+      font-size: $font-size-caption;
+      font-family: 'Poppins-500';
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      overflow: hidden;
+
+      &.ant-pagination-item {
+        &-active {
+          background-color: $color-primary;
+
+          a {
+            color: $white;
+          }
+        }
+
+        &:not(.ant-pagination-item-active):hover {
+          background-color: $bg-input-color;
+        }
+      }
+    }
+  }
+}

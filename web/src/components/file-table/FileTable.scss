@@ -1,0 +1,100 @@
+@use 'src/themes/variables' as *;
+
+.FileTable {
+  &.Table {
+    // height: 610px;
+  }
+
+  .ant-table-column-sorter {
+    display: none;
+  }
+
+  &__title {
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+  }
+
+  &.Table.ant-table-wrapper .ant-table-tbody tr {
+    height: 48px;
+  }
+
+  &.Table.ant-table-wrapper .ant-table-thead .ant-table-cell {
+    font-family: 'Poppins-400';
+    font-weight: 500;
+  }
+
+  &.Table.ant-table-wrapper .ant-table-cell {
+    padding: 9px 16px;
+  }
+
+  &.Table .ant-table-cell .details_container {
+    display: flex;
+
+    .body1 {
+      display: flex;
+      align-items: center;
+      // margin-left: 10px;
+    }
+    .avatar img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+    }
+  }
+
+  &.Table .ant-table-filter-column {
+    justify-content: normal;
+
+    .ant-table-column-title {
+      flex: none;
+    }
+
+    .ant-table-filter-trigger {
+      margin-inline: 6px -8px;
+    }
+  }
+
+  &__dischargeBtn {
+    &.ant-btn {
+      font-family: 'Poppins-400';
+      font-size: $font-size-caption;
+      border-style: none;
+      padding: 6px 16px;
+      line-height: 16px;
+    }
+  }
+
+  .ant-table-filter-trigger {
+    position: absolute;
+    left: 0;
+    right: 0;
+    padding-left: 54px;
+    z-index: 1;
+    top: 4px;
+    bottom: 0;
+  }
+
+  .row-action {
+    display: flex;
+    justify-content: flex-end;
+    width: '100%';
+    gap: 8px;
+
+    &__icons {
+      color: $philippine-gray;
+      width: 16px;
+      height: 16px;
+    }
+  }
+
+  .title {
+    display: flex;
+    gap: 8px;
+  }
+
+  .details_container {
+    display: flex;
+    gap: 8px;
+  }
+}

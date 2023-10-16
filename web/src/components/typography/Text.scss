@@ -1,0 +1,91 @@
+@use 'src/themes/variables' as *;
+
+.Text {
+  &.display1 {
+    font-size: 34px;
+    line-height: 50px;
+    letter-spacing: -0.01em;
+  }
+
+  &.headline {
+    font-size: $font-size-headline;
+    line-height: 36px;
+  }
+
+  &.title {
+    font-family: 'Poppins-500';
+    font-size: $font-size-title;
+    line-height: 24px;
+    letter-spacing: -0.005em;
+  }
+
+  &.subHeading {
+    font-family: 'Poppins-500';
+    font-size: $font-size-sub;
+    line-height: 21px;
+    letter-spacing: -0.005em;
+  }
+
+  &.body2 {
+    line-height: 21px;
+  }
+
+  &.body1 {
+    font-size: $font-size-small;
+    line-height: 20px;
+  }
+
+  &.caption {
+    font-size: $font-size-caption;
+    line-height: 16px;
+  }
+
+  &.small {
+    font-family: 'Poppins-400';
+    font-size: $font-size-small;
+    line-height: 19.5px;
+  }
+
+  &.x-small {
+    font-family: 'Poppins-400';
+    font-size: $font-size-x-small;
+    line-height: 15px;
+  }
+
+  &.heading {
+    font-family: 'Poppins-400';
+    font-size: $font-size-heading;
+    line-height: 50px;
+  }
+
+  &.xl {
+    font-family: 'Poppins-400';
+    font-size: $font-size-xl;
+    line-height: 67.5px;
+  }
+
+  &.button {
+    font-family: 'Poppins-500';
+    font-size: $font-size-default;
+    line-height: 21px;
+  }
+
+  &.display2 {
+    font-size: 45px;
+    line-height: 68px;
+    letter-spacing: -0.01em;
+  }
+
+  &.error {
+    color: $color-error;
+  }
+
+  &.gray {
+    color: $font-color-caption;
+  }
+
+  &.dangerousText {
+    white-space: pre-line;
+    word-break: break-all;
+  }
+}

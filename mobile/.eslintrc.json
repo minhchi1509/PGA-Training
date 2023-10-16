@@ -1,0 +1,64 @@
+{
+  "root": true,
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["@typescript-eslint", "prettier", "react", "react-hooks"],
+  "extends": ["plugin:react/recommended", "plugin:@typescript-eslint/recommended"],
+  "env": {
+    "browser": true,
+    "node": true,
+    "jest": true,
+    "es6": true
+  },
+  "rules": {
+    "indent": ["warn", 2, { "SwitchCase": 1 }],
+    "semi": ["warn", "always"],
+    "import/no-named-as-default-member": 0,
+    "implicit-arrow-linebreak": 0,
+    "no-multi-spaces": ["error", { "ignoreEOLComments": false }],
+    "no-multiple-empty-lines": ["error", { "max": 1, "maxEOF": 0 }],
+    "no-console": 0,
+    "import/extensions": 0,
+    "object-curly-spacing": 0,
+    "space-infix-ops": 0,
+    "no-underscore-dangle": 0,
+    "react/react-in-jsx-scope": 0,
+    "react/jsx-filename-extension": 0,
+    "linebreak-style": 0,
+    "prefer-arrow-callback": 0,
+    "func-names": 0,
+    "object-curly-newline": 0,
+    "react-hooks/exhaustive-deps": "warn",
+    "import/no-anonymous-default-export": 0,
+    "no-undef": 0,
+    "import/no-extraneous-dependencies": 0,
+    "no-empty-pattern": 0,
+    "quotes": 0,
+    "react/prop-types": "off",
+    "@typescript-eslint/quotes": 0,
+    "@typescript-eslint/no-empty-function": 0,
+    "@typescript-eslint/ban-types": 0,
+    "@typescript-eslint/no-explicit-any": 0,
+    "@typescript-eslint/no-use-before-define": "off",
+    "@typescript-eslint/naming-convention": "off",
+    "@typescript-eslint/no-shadow": "off",
+    "@typescript-eslint/default-param-last": "off",
+    "react/display-name": "off",
+    "sort-imports": [
+      "error",
+      {
+        "ignoreCase": true,
+        "ignoreDeclarationSort": true
+      }
+    ]
+  },
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": "latest",
+    "sourceType": "module",
+    "project": "./tsconfig.json",
+    "parser": "@typescript-eslint/parser"
+  },
+  "ignorePatterns": ["node_modules", "build", "dist", "public"]
+}

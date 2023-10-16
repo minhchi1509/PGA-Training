@@ -1,0 +1,48 @@
+@use 'src/themes/variables' as *;
+
+.AllAssignedTasks {
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &-total {
+      font-size: 10px;
+      padding: 3px 8px;
+      border-radius: 6px;
+      color: $dark-violet;
+      background-color: $light-violet;
+    }
+
+    &-action {
+      color: $font-color-caption;
+
+      &-btn {
+        &.ant-btn {
+          color: $color-primary;
+          width: 36px;
+          height: 36px;
+
+          &.noBorder {
+            box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.1);
+          }
+        }
+      }
+    }
+  }
+
+  &__tabs {
+    margin-top: 16px;
+
+    .Search {
+      margin: 16px 0;
+    }
+
+    .AssignedTaskList {
+      height: 515px;
+      margin-right: -20px;
+      padding-right: 20px;
+      overflow-y: auto;
+    }
+  }
+}

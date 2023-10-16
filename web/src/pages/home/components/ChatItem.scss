@@ -1,0 +1,30 @@
+@use 'src/themes/variables' as *;
+
+.ChatItem {
+  display: flex;
+  margin-top: 8px;
+  padding: 4px;
+  align-items: center;
+  border-radius: 10px;
+  height: 48px;
+  gap: 10px;
+
+  &:hover {
+    background-color: $grayscale20;
+    cursor: pointer;
+    transition: all 300ms;
+  }
+  .Avatar.ant-avatar {
+    width: 40px;
+    height: 40px;
+  }
+
+  &__content {
+    flex: 1;
+
+    &--message {
+      font-size: $font-size-x-small;
+      color: $font-color-caption;
+    }
+  }
+}

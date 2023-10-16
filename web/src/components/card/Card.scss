@@ -1,0 +1,24 @@
+@use 'src/themes/variables' as *;
+
+.Card {
+  &.ant-card {
+    box-shadow: none;
+    border-radius: 10px;
+
+    &-bordered {
+      border-color: $border-default-color;
+    }
+  }
+
+  .ant-card {
+    &-head {
+      padding: 20px 20px 0;
+      min-height: auto;
+      border-bottom: none;
+    }
+
+    &-body {
+      padding: 0 20px 20px;
+    }
+  }
+}

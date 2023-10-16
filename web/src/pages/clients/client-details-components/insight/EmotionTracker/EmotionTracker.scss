@@ -1,0 +1,44 @@
+@use 'src/themes/variables' as *;
+
+.EmotionTracker {
+  width: 42%;
+  padding: 20px;
+  padding-top: 16px;
+  &__item {
+    border: 1px solid $color-offline;
+    margin-top: 16px;
+    border-radius: 8px;
+    padding: 20px;
+  }
+  &__title {
+    color: $color-success;
+    margin-bottom: 16px;
+  }
+  &__container {
+    display: flex;
+  }
+  &__line {
+    height: 200px;
+    flex: 1;
+  }
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__filter {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: $bg-input-color;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    width: 140px;
+    justify-content: space-between;
+  }
+  &__loading {
+    height: 200px;
+    text-align: center;
+    padding-top: 80px;
+  }
+}

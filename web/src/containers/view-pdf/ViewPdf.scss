@@ -1,0 +1,79 @@
+.ViewPDfPage input,
+.ViewPDfPage button {
+  font: inherit;
+}
+
+.ViewPdfPage {
+  &__header {
+    height: 86px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &-logo {
+      position: absolute;
+      left: 20px;
+    }
+  }
+  &__title {
+    text-align: inherit;
+    color: black;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 18px;
+  }
+}
+
+.ViewPDfPage header {
+  background-color: #323639;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+  background: white;
+  padding: 20px;
+  color: white;
+}
+
+.ViewPDfPage header h1 {
+  font-size: inherit;
+  margin: 0;
+}
+
+.ViewPDfPage__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px 0;
+  padding: 10px 200px;
+  &.small-page {
+    padding: 10px 50px;
+  }
+}
+
+.ViewPDfPage__container__load {
+  margin-top: 1em;
+  color: white;
+}
+
+.ViewPDfPage__container__document {
+  margin: 1em 0;
+}
+
+.ViewPDfPage__container__document .react-pdf__Document {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ViewPDfPage__container__document .react-pdf__Page {
+  max-width: calc(100% - 2em);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+  margin: 1em;
+}
+
+.ViewPDfPage__container__document .react-pdf__Page canvas {
+  max-width: 100%;
+  height: auto !important;
+}
+
+.ViewPDfPage__container__document .react-pdf__message {
+  padding: 20px;
+  color: white;
+}

@@ -1,0 +1,91 @@
+@use 'src/themes/variables' as *;
+
+.TaskItem {
+  border-radius: 8px;
+  padding: 10px;
+  background-color: $bg-gray-3;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-left: 4px solid;
+
+  &.assigned {
+    padding: 6px 10px 10px 16px;
+  }
+
+  &.noBorder {
+    gap: 10px;
+    border-style: none;
+  }
+
+  &.disabledDrag {
+    background-color: $grayscale30;
+  }
+
+  &.Activity {
+    border-color: $activity-color;
+  }
+
+  &.Questionnaire {
+    border-color: $question-color;
+  }
+
+  &.WrittenTask {
+    border-color: $written-color;
+  }
+
+  &.Video {
+    border-color: $video-color;
+  }
+
+  &__left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    &-details {
+      line-height: 15px;
+      display: flex;
+      align-items: flex-start;
+      font-size: 11px;
+      color: $philippine-gray;
+
+      &-icon {
+        margin-right: 6px;
+
+        svg {
+          width: 14px;
+          height: 14px;
+        }
+      }
+
+      &-repeat {
+        margin-left: 16px;
+      }
+    }
+
+    &-description {
+      font-size: $font-size-caption;
+      color: $philippine-gray;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      line-clamp: 2;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+    }
+
+    &-dragIcon {
+      height: 20px;
+    }
+  }
+
+  &__title {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    line-clamp: 2;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+}

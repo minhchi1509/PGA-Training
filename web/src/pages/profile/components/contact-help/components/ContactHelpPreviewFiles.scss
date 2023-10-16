@@ -1,0 +1,72 @@
+@use 'src/themes/variables' as *;
+
+.ContactHelpPreviewFiles {
+  width: 100%;
+  max-height: 260px;
+  overflow: auto;
+
+  &__ImageVideoFileList {
+    display: flex;
+    gap: 16px;
+    .PreviewChatFiles {
+      flex-wrap: wrap;
+      overflow: initial;
+    }
+  }
+
+  &__OtherFileList {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-top: 6px;
+
+    .FileItemContainer {
+      display: flex;
+      align-items: center;
+      padding: 6px;
+      gap: 6px;
+      height: 54.34px;
+      background: white;
+      border: 1px solid #e1e6ef;
+      border-radius: 10px;
+
+      &__image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        width: 44px;
+        height: 100%;
+        background: #eff2fc;
+        border-radius: 6px;
+
+        img {
+          height: 24px;
+          width: 24px;
+        }
+      }
+
+      &__content {
+        flex: 1;
+        &--file-size {
+          color: $font-color-caption;
+        }
+      }
+
+      &__remove {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+
+        &:hover {
+          cursor: pointer;
+          transition: all 300ms;
+          background: $grayscale20;
+        }
+      }
+    }
+  }
+}

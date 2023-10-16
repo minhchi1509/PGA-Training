@@ -1,0 +1,15 @@
+@use 'src/themes/variables' as *;
+
+.verify-email-container {
+  margin: auto;
+  margin-top: 300px;
+  width: fit-content;
+  text-align: center;
+  &__description {
+    margin-top: 30px;
+    &--explain-text {
+      color: $font-color-caption;
+      margin-top: 6px;
+    }
+  }
+}

@@ -1,0 +1,56 @@
+@use '../../themes/colors' as *;
+
+$notification-height: 72px;
+$icon-height: 48px;
+
+.ant-notification-notice {
+  padding: 0 16px !important;
+  width: fit-content;
+  height: $notification-height;
+
+  &.success {
+    border-left: 4px $bg-success solid;
+  }
+
+  &.error {
+    border-left: 4px $bg-error solid;
+  }
+
+  .ant-notification-notice-content {
+    max-width: 444px;
+
+    .ant-notification-notice-with-icon {
+      display: flex;
+      height: $notification-height;
+      align-items: center;
+    }
+
+    .ant-notification-notice-message {
+      display: none;
+    }
+
+    .ant-notification-notice-description {
+      margin-left: 64px !important;
+      font-size: 13px !important;
+      color: $philippine-gray;
+      max-height: $icon-height;
+
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .ant-notification-notice-icon {
+      svg {
+        width: $icon-height;
+        height: $icon-height;
+      }
+    }
+  }
+
+  .ant-notification-notice-close {
+    display: none;
+  }
+}

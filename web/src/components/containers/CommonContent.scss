@@ -1,0 +1,28 @@
+@use 'src/themes/variables' as *;
+
+.CommonContent {
+  &__header {
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &-title {
+      display: flex;
+      gap: 16px;
+      align-items: center;
+    }
+
+    &-backBtn {
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+
+  &__content {
+    padding: 20px;
+    border-radius: 8px;
+    background-color: $white;
+  }
+}

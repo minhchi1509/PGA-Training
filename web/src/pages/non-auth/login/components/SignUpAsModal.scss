@@ -1,0 +1,13 @@
+.SignUpAsModal {
+  .ant-modal-content {
+    padding: 30px 16px;
+
+    .sign-up-as-modal {
+      width: 100%;
+      text-align: center;
+      &__button {
+        width: 100%;
+      }
+    }
+  }
+}

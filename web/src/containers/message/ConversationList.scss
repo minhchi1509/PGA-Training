@@ -1,0 +1,22 @@
+.ConversationList {
+  overflow: auto;
+
+  &__loading {
+    display: flex;
+    justify-content: center;
+
+    &.custom {
+      margin-top: -8px;
+    }
+  }
+
+  &__searching {
+    margin-top: 20px;
+  }
+
+  .infinite-scroll-component {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+}

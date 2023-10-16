@@ -1,0 +1,46 @@
+@use 'src/themes/variables' as *;
+
+.SummaryComponent {
+  margin-bottom: 16px;
+  .CommonContent__content {
+    background-color: $grayscale10;
+    padding: 0;
+  }
+
+  .SummaryComponent__content {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+    width: 1020px;
+    height: 204px;
+    background-color: $grayscale10;
+
+    &-card {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding: 20px 20px 30px;
+      gap: 16px;
+      width: 502px;
+      height: 204px;
+      background: #ffffff;
+      border-radius: 8px;
+
+      .total-number {
+        color: $color-success;
+      }
+
+      &-head {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 0px;
+        width: 238px;
+        height: 92px;
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+@use 'src/themes/variables' as *;
+
+.Container {
+  margin: 30px 0 0;
+  padding-bottom: 70px;
+  background-color: $bg-input-color;
+
+  &__content {
+    width: 1020px;
+    margin: auto;
+  }
+}

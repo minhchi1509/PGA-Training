@@ -1,0 +1,21 @@
+@use 'src/themes/variables' as *;
+
+.PhoneNumber {
+  padding: 13px 10px;
+  border-radius: 10px;
+  font-size: $font-size-small;
+  line-height: 20px;
+  background-color: $bg-input-color;
+  border-color: $bg-input-color;
+
+  &:focus {
+    background-color: $white;
+    border-color: $border-active-color;
+  }
+}
+
+.ant-form-item-has-error {
+  .PhoneNumber {
+    border-color: $color-error;
+  }
+}

@@ -1,0 +1,61 @@
+@use 'src/themes/variables' as *;
+
+.Header {
+  position: fixed !important;
+  width: 100% !important;
+  padding-inline: 30px !important;
+  background-color: white !important;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+  z-index: 998;
+
+  &__right {
+    display: flex;
+    align-items: center;
+    gap: 27px;
+  }
+
+  &__icon {
+    width: 80px;
+    text-align: center;
+    cursor: pointer;
+    padding-top: 12px;
+  }
+
+  &__avatar {
+    img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+    }
+  }
+}
+
+.Menu__item {
+  height: 40px !important;
+  display: flex;
+  align-items: center;
+  padding-left: 12px;
+  padding-right: 24px;
+  &-title {
+    margin-left: 6px;
+  }
+}
+
+.Menu__item {
+  &-role {
+    padding: 6px 12px;
+    &-icon {
+      margin-right: 6px;
+    }
+  }
+}
+
+.LogoutModal {
+  text-align: center;
+}
+
+.ant-dropdown-menu-submenu-arrow {
+  display: none;
+}

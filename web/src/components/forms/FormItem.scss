@@ -1,0 +1,65 @@
+@use 'src/themes/variables' as *;
+
+.FormItem {
+  margin-bottom: 16px;
+
+  .ant-form-item {
+    &-label {
+      padding-bottom: 4px;
+
+      > label {
+        font-size: $font-size-caption;
+        line-height: 16px;
+      }
+    }
+
+    &-explain-error {
+      text-align: left;
+      font-size: $font-size-caption;
+      line-height: 1.25;
+    }
+  }
+
+  label {
+    // width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: $font-size-caption;
+
+    .rightLabel {
+      color: $font-color-caption;
+    }
+  }
+
+  &__has-right {
+    label {
+      width: 100%;
+      &::before {
+        display: none !important;
+      }
+    }
+    .FormItem__left-label {
+      position: relative;
+      &::before {
+        display: inline-block;
+        margin-inline-end: 4px;
+        color: #ff7777;
+        font-size: 14px;
+        font-family: SimSun, sans-serif;
+        line-height: 1;
+        content: '*';
+        position: absolute;
+        right: -12px;
+        top: -1px;
+      }
+    }
+  }
+
+  &.FormItem_hide-required-mark {
+    .ant-form-item-required {
+      &::before {
+        display: none !important;
+      }
+    }
+  }
+}

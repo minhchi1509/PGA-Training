@@ -1,0 +1,14 @@
+// Typography.Link
+a.ant-typography {
+  color: $color-primary;
+}
+button.ant-btn-primary:not(:disabled):hover {
+  background: #40a3da;
+}
+.ant-form-item-required {
+  &::before {
+    right: -12px;
+    top: -1px;
+    position: absolute;
+  }
+}

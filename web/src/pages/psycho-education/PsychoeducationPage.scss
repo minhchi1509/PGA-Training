@@ -1,0 +1,94 @@
+@use 'src/themes/variables' as *;
+
+.PsychoeducationPage {
+  .CommonContent__content {
+    padding: 0;
+    height: 788px;
+    display: flex;
+  }
+
+  &__topics {
+    width: 230px;
+    padding: 20px;
+
+    .PsychoeducationTopicList {
+      height: 100%;
+      margin-right: -20px;
+      padding-right: 20px;
+      overflow-y: auto;
+    }
+  }
+
+  &__lessons {
+    flex: 1;
+    padding: 20px;
+    border-left: 1px solid $border-default-color;
+
+    &-list {
+      padding: 6px;
+      max-height: 708px;
+      border-radius: 8px;
+      border: 1px solid $border-default-color;
+      overflow-y: auto;
+    }
+
+    .PsychoeducationItem {
+      &:not(:first-child) {
+        margin-top: 4px;
+      }
+    }
+
+    &-loader {
+      display: flex;
+      justify-content: center;
+      margin-top: 10px;
+      width: 100%;
+    }
+
+    &-loadingAll {
+      margin-top: 100px;
+      display: flex;
+      justify-content: center;
+    }
+
+    &-empty {
+      margin-top: 100px;
+    }
+
+    &-header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 16px;
+
+      &-icon {
+        cursor: pointer;
+      }
+    }
+
+    &-details {
+      max-height: 708px;
+      margin-right: -20px;
+      padding-right: 20px;
+      overflow: auto;
+
+      div {
+        img {
+          width: 749px;
+        }
+        p {
+          line-height: 21px;
+          span {
+            font-size: $font-size-sub;
+            line-height: 21px;
+          }
+        }
+      }
+
+      &-video {
+        display: flex;
+        justify-content: center;
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+@use 'src/themes/variables' as *;
+
+.HomeworkHistoriesByDate {
+  &__header {
+    margin-bottom: 6px;
+  }
+
+  &__iconClock {
+    border-radius: 50%;
+    padding: 5px;
+    color: $activity-color;
+    background: #fff5e6;
+  }
+
+  &__list {
+    .TaskItem {
+      &:not(:first-child) {
+        margin-top: 6px;
+      }
+    }
+  }
+}

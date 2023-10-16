@@ -1,0 +1,34 @@
+.SelectRole {
+  &__avatar {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    margin-bottom: 4px;
+    &-container {
+      position: relative;
+      margin-bottom: 4px;
+      margin-right: 10px;
+    }
+  }
+  &__title {
+    text-align: center !important;
+    margin-bottom: 20px;
+  }
+  &__btn {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 16px;
+    flex-direction: row;
+  }
+  &__check {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  &__box {
+    // display: flex;
+  }
+}

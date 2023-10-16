@@ -1,0 +1,55 @@
+@use 'src/themes/variables' as *;
+
+.ContactHelp {
+  height: 739px;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 380px;
+
+    &--title {
+      color: $font-color-caption;
+    }
+
+    .FormItem {
+      margin-bottom: 0;
+    }
+
+    &--upload {
+      align-self: center;
+
+      .btn-upload {
+        align-self: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 0px 24px 0px 16px;
+        gap: 6px;
+        width: 150px;
+        height: 48px;
+        background: #ffffff;
+        border: 1.5px dashed #19bcfe;
+        border-radius: 10px;
+      }
+    }
+
+    &--action {
+      display: flex;
+      gap: 10px;
+
+      .btn-cancel {
+        flex: 1;
+      }
+
+      .btn-submit {
+        flex: 1;
+      }
+    }
+  }
+}

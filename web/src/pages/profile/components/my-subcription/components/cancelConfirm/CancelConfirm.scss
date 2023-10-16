@@ -1,0 +1,44 @@
+@use 'src/themes/variables' as *;
+
+.CancelSubcription {
+  .CancelSubcription-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px 0px 10px;
+    width: 330px;
+    height: 170px;
+
+    &__body {
+      color: $font-color-caption;
+    }
+  }
+  &__subtitle {
+    color: $philippine-gray;
+  }
+  &__reason {
+    &--title {
+      margin-bottom: 10px;
+    }
+  }
+  &.ConfirmModal {
+    .btn-margin {
+      width: 99px !important;
+    }
+    .cancellation {
+      width: 221px !important;
+    }
+  }
+
+  .CancelSubcription-reason-heading {
+    margin-bottom: 16px;
+  }
+
+  .CancelSubcription-reason {
+    gap: 16px;
+
+    .reason-other-input {
+      height: 128px;
+    }
+  }
+}

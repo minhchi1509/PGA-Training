@@ -1,0 +1,53 @@
+@use 'src/themes/variables' as *;
+
+.CreateChatHeader {
+  width: 100%;
+  display: flex;
+  align-items: center;
+
+  &__wrapper {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    user-select: none;
+
+    &-selected {
+      margin-left: 10px;
+      padding: 6px 10px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      border-radius: 6px;
+      color: $color-primary;
+      background: rgba(72, 171, 226, 0.1);
+
+      &-icon {
+        cursor: pointer;
+      }
+    }
+
+    .CreateChatHeader__input {
+      flex: 1;
+    }
+  }
+
+  &__options {
+    &.ant-popover .ant-popover-inner {
+      padding: 4px;
+      box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  &__input.ant-input {
+    padding: 10px;
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+
+    &:focus {
+      border: none;
+      box-shadow: none;
+    }
+  }
+}

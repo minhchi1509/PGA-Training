@@ -1,0 +1,57 @@
+@use 'src/themes/variables' as *;
+
+.MessagesPage {
+  &__content {
+    .CommonContent__content {
+      max-height: 790px;
+      padding: 20px 0 30px 20px;
+    }
+  }
+
+  &__element {
+    max-height: 740px;
+  }
+
+  &__addIcon.ant-btn {
+    color: $font-color-default;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+
+    &:hover,
+    &.active {
+      color: $white;
+      background-color: $color-primary;
+    }
+  }
+
+  &__wrapper {
+    height: 750px;
+    display: flex;
+  }
+
+  &__conversations {
+    min-width: 320px;
+    max-width: 320px;
+  }
+
+  &__divider {
+    height: 100%;
+    border-color: $border-default-color;
+    margin: 0 16px;
+  }
+
+  &__chat {
+    width: 100%;
+  }
+
+  .PreviewFilesModal__carousel-image {
+    margin: 0 30px;
+  }
+
+  &__ConfirmModal {
+    &-content {
+      color: $font-color-caption;
+    }
+  }
+}

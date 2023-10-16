@@ -1,0 +1,88 @@
+@use './variables' as *;
+@import './antd-override';
+@import './animate';
+
+@font-face {
+  font-family: 'Poppins-300';
+  src: url('../assets/fonts/Poppins-Light.ttf');
+}
+
+@font-face {
+  font-family: 'Poppins-400';
+  src: url('../assets/fonts/Poppins-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Poppins-500';
+  src: url('../assets/fonts/Poppins-Medium.ttf');
+}
+
+@font-face {
+  font-family: 'Poppins-600';
+  src: url('../assets/fonts/Poppins-SemiBold.ttf');
+}
+
+@font-face {
+  font-family: 'Poppins-700';
+  src: url('../assets/fonts/Poppins-Bold.ttf');
+}
+
+/* Global - Style */
+body {
+  font-size: $font-size-default;
+  font-family: 'Poppins-400';
+  color: $font-color-default;
+}
+
+div {
+  &#root,
+  &.App {
+    height: 100%;
+  }
+}
+
+/* H1 - Typography */
+h1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  color: $font-color-default;
+}
+
+/* H2 - Typography */
+h2 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 56px;
+  color: $font-color-default;
+}
+
+/* H3 - Typography */
+h3 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 44px;
+  color: $font-color-default;
+}
+
+p {
+  margin: 0;
+}
+
+.custom-scrollbar {
+  &::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: #a8a8a8;
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background: #a8a8a8;
+  }
+}

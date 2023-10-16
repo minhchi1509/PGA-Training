@@ -1,0 +1,32 @@
+@use 'src/themes/variables' as *;
+
+.PractitionerDetailsPage {
+  &__wrapper {
+    .CommonContent__content {
+      padding: 0;
+    }
+  }
+
+  &__title {
+    .StatusBox__status {
+      line-height: 15px;
+    }
+  }
+
+  &__confirmModal {
+    &-description {
+      text-align: center !important;
+      color: $font-color-caption;
+    }
+
+    &-reactivateIcon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 48px;
+      height: 48px;
+      border-radius: 100%;
+      background-color: #e6fbf3;
+    }
+  }
+}

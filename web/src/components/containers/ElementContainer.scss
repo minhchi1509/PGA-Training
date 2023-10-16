@@ -1,0 +1,17 @@
+@use 'src/themes/variables' as *;
+
+.ElementContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+
+  &__label {
+    display: flex;
+    justify-content: space-between;
+
+    &-rightLabel {
+      color: $font-color-caption;
+    }
+  }
+}

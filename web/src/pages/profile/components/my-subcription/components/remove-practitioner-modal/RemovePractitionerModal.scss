@@ -1,0 +1,91 @@
+@use 'src/themes/variables' as *;
+
+.RemovePractitionerModal {
+  .ant-modal-content {
+    padding: 20px;
+
+    .ant-modal-body {
+      min-height: 684px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+  }
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    .caption {
+      color: $font-color-caption;
+    }
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    &-table {
+      border-radius: 8px;
+      border: 1px solid $border-default-color;
+
+      &--header,
+      &--row {
+        padding: 10px 16px;
+        margin: 0 !important;
+        align-items: center;
+        border-bottom: 1px solid $border-default-color;
+      }
+
+      &--header {
+        color: $color-primary;
+        background-color: $bg-gray-2;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+      }
+
+      &--row {
+        &--checkbox {
+          display: flex;
+          justify-content: center;
+        }
+
+        &:last-child {
+          border: none;
+          border-bottom-left-radius: 8px;
+          border-bottom-right-radius: 8px;
+        }
+
+        &.selected {
+          background-color: $bg-gray-2;
+        }
+      }
+
+      &--col {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+    }
+
+    &-description {
+      color: $font-color-caption;
+    }
+  }
+
+  &__footer {
+    display: flex;
+    gap: 10px;
+
+    .Button {
+      width: 175px;
+      height: fit-content;
+    }
+  }
+
+  &__stepView {
+    width: 25%;
+  }
+}

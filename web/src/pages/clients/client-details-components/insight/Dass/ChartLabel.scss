@@ -1,0 +1,23 @@
+@use 'src/themes/variables' as *;
+
+.ChartLabel {
+  height: 356px;
+  display: flex;
+  flex-direction: column;
+  width: 30px;
+  &__item {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &--title {
+      font-size: 10px;
+      text-align: center !important;
+      color: $font-color-default;
+      font-family: 'Poppins-500';
+      font-weight: 500;
+      transform: rotate(-90deg);
+      line-height: 15px !important;
+    }
+  }
+}

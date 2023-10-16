@@ -1,0 +1,16 @@
+@use 'src/themes/variables' as *;
+
+.LoginSuccess {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  &__title {
+    margin-top: 30px;
+    margin-top: 6px;
+  }
+  &__subtitle {
+    color: $philippine-gray;
+  }
+}

@@ -1,0 +1,74 @@
+@use 'src/themes/variables' as *;
+
+.VerifyPractitionerContentPage {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-repeat: no-repeat;
+  background-size: auto;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+
+  img {
+    height: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+
+  &__header {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+
+    &-text {
+      color: #1a1a1a;
+      font-family: 'Poppins-600';
+      font-weight: 600;
+      line-height: 18px;
+      letter-spacing: 0.12em;
+      margin-top: 4px;
+    }
+  }
+
+  &__welcome {
+    &-content,
+    &-header {
+      text-align: center !important;
+      z-index: 2;
+    }
+  }
+
+  &__footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    z-index: 2;
+
+    &-button {
+      width: 320px;
+    }
+
+    &-notice {
+      font-weight: 500;
+      z-index: 2;
+    }
+  }
+
+  &__btn-container {
+    width: 320px;
+    gap: 16px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__btn-sign-up {
+    margin: 16px 0;
+    width: 320px;
+  }
+}

@@ -1,0 +1,22 @@
+@use 'src/themes/variables' as *;
+
+.Select {
+  &.ant-select {
+    font-size: $font-size-small;
+
+    .ant-select {
+      &-selector {
+        height: auto;
+        border-color: $bg-input-color;
+        padding: 8px 0px 8px 10px;
+        border-radius: 10px;
+        background-color: $bg-input-color;
+      }
+
+      &-selection-item,
+      &-selection-placeholder {
+        font-size: $font-size-small;
+      }
+    }
+  }
+}

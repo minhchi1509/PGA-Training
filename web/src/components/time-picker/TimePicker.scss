@@ -1,0 +1,28 @@
+@use 'src/themes/variables' as *;
+
+.TimePicker {
+  padding: 13px 10px;
+  border-radius: 10px;
+  width: 100%;
+  border-color: $bg-input-color;
+
+  &.ant-picker {
+    background-color: $bg-input-color;
+
+    &.ant-picker-status-error {
+      background-color: $bg-input-color;
+    }
+
+    &-focused {
+      background-color: $white !important;
+      border-color: $border-active-color;
+    }
+
+    .ant-picker-input {
+      > input {
+        line-height: 20px;
+        font-size: $font-size-small;
+      }
+    }
+  }
+}

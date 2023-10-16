@@ -1,0 +1,25 @@
+.NewTopicModal {
+  &__title {
+    margin-bottom: 20px;
+  }
+
+  &__input-row {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  &__buttons {
+    margin-top: 4px;
+    display: flex;
+    gap: 10px;
+  }
+
+  &__button {
+    width: 100%;
+  }
+
+  .ant-modal-content {
+    padding: 30px 20px !important;
+  }
+}

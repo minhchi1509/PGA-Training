@@ -1,0 +1,22 @@
+.Collapse {
+  &.ant-collapse {
+    background-color: transparent;
+
+    .ant-collapse {
+      &-header {
+        padding: 10px;
+        font-family: 'Poppins-500';
+      }
+
+      &-item {
+        border-style: none;
+      }
+    }
+  }
+
+  &__header {
+    cursor: pointer;
+    padding: 10px;
+    font-family: 'Poppins-500';
+  }
+}

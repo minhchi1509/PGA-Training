@@ -1,0 +1,67 @@
+@use 'src/themes/variables' as *;
+
+.HomeWorkDetail {
+  .ant-modal-body {
+    text-align: center;
+  }
+
+  &__wrapper {
+    width: 100%;
+  }
+
+  &__body {
+    background: $bg-gray;
+    border-radius: 8px;
+    padding: 16px 16px 30px 16px;
+
+    &-title {
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 10px;
+      align-items: center;
+      svg,
+      img {
+        margin-right: 10px;
+      }
+    }
+
+    &-description {
+      color: $font-color-caption;
+    }
+
+    &-time {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-top: 10px;
+      svg {
+        margin-right: 6px;
+      }
+    }
+    &-hour {
+      margin-left: 6px;
+    }
+  }
+
+  &.video {
+    .HomeWorkDetail__body {
+      display: flex;
+      gap: 16px;
+      background-color: transparent;
+      padding: 0;
+      margin-top: 8px;
+
+      &-videoContent {
+        flex: 1;
+        background: $bg-gray;
+        border-radius: 8px;
+        padding: 16px 16px 30px;
+        text-align: left;
+      }
+
+      &-description {
+        margin: 8px 0 10px 0;
+      }
+    }
+  }
+}

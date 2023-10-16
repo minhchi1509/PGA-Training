@@ -1,0 +1,23 @@
+@use 'src/themes/variables' as *;
+
+.ErrorScreen {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 300px;
+
+  &__icon {
+    margin-bottom: 30px;
+  }
+
+  &__note {
+    margin-top: 6px;
+    color: $font-color-caption;
+  }
+
+  &__action {
+    margin-top: 20px;
+  }
+}

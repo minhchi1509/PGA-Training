@@ -1,0 +1,63 @@
+@use 'src/themes/variables' as *;
+
+.ClientsTable {
+  &.Table {
+    // height: 610px;
+  }
+
+  &.Table.ant-table-wrapper .ant-table-thead .ant-table-cell {
+    font-family: 'Poppins-400';
+    font-weight: 500;
+  }
+
+  &.Table.ant-table-wrapper .ant-table-cell {
+    padding: 9px 16px;
+  }
+
+  &.Table .ant-table-cell .details_container {
+    display: flex;
+
+    .body1 {
+      display: flex;
+      align-items: center;
+      margin-left: 10px;
+    }
+    .avatar img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+    }
+  }
+
+  &.Table .ant-table-filter-column {
+    justify-content: normal;
+
+    .ant-table-column-title {
+      flex: none;
+    }
+
+    .ant-table-filter-trigger {
+      margin-inline: 6px -8px;
+    }
+  }
+
+  &__dischargeBtn {
+    &.ant-btn {
+      font-family: 'Poppins-400';
+      font-size: $font-size-caption;
+      border-style: none;
+      padding: 6px 16px;
+      line-height: 16px;
+    }
+  }
+
+  .ant-table-filter-trigger {
+    position: absolute;
+    left: 0;
+    right: 0;
+    padding-left: 54px;
+    z-index: 1;
+    top: 4px;
+    bottom: 0;
+  }
+}

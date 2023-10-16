@@ -1,0 +1,15 @@
+@use 'src/themes/variables' as *;
+
+.Alert {
+  padding: 10px 16px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  &__warning {
+    background-color: $bg-info-color;
+  }
+  &__title {
+    flex: 1;
+    margin-left: 18px;
+  }
+}

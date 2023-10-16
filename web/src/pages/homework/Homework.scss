@@ -1,0 +1,76 @@
+@use 'src/themes/variables' as *;
+
+.HomeworkPage {
+  .CommonContent__content {
+    display: flex;
+    height: 788px;
+    padding: 0;
+  }
+
+  &__left-side-bar {
+    width: 230px;
+    border-right: 1px solid $border-default-color;
+    padding: 20px 35px 20px 20px;
+    flex-shrink: 0;
+    overflow-y: auto;
+  }
+
+  &__right-side-bar {
+    width: 100%;
+    padding: 20px;
+
+    .HomeworkPage__title {
+      margin-bottom: 16px;
+    }
+
+    .HomeworkPage__search-bar {
+      margin-bottom: 16px;
+      margin-top: 10px;
+    }
+  }
+
+  &__tabs-header {
+    border-top: 1px solid $border-default-color;
+    border-bottom: 1px solid $border-default-color;
+
+    .ant-tabs-nav {
+      background-color: $white !important;
+      &::before {
+        border: none;
+      }
+    }
+
+    .ant-tabs-ink-bar {
+      display: none;
+    }
+  }
+
+  &__list {
+    height: calc(100% - 175px);
+
+    .ant-spin-container {
+      height: 100%;
+    }
+  }
+
+  &__loading,
+  &__emptyHomework {
+    width: 100%;
+    padding-top: 100px;
+  }
+
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background-color: #f4f4f4;
+    border-radius: 100px;
+    margin: 3px 0;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: #c9c9c9;
+    border-radius: 100px;
+  }
+}

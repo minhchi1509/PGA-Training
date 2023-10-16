@@ -1,0 +1,46 @@
+@use 'src/themes/variables' as *;
+
+.TextArea {
+  padding: 13px 10px;
+  border-radius: 10px;
+  border-color: $bg-input-color;
+
+  &.ant-input {
+    border-color: transparent;
+    line-height: 20px;
+    font-size: $font-size-small;
+    background-color: $bg-input-color;
+
+    &:focus {
+      background-color: $white;
+      border-color: $border-active-color;
+    }
+  }
+
+  &.wrapper {
+    &.ant-input-affix-wrapper {
+      line-height: 20px;
+      border-color: transparent;
+      background-color: $bg-input-color;
+
+      .ant-input-prefix {
+        height: 20px;
+        margin-inline-end: 10px;
+      }
+
+      > input.ant-input {
+        height: 20px;
+        background-color: $bg-input-color;
+
+        &:focus {
+          background-color: $white;
+        }
+      }
+
+      &:focus-within {
+        border-color: $border-active-color;
+        background-color: $white;
+      }
+    }
+  }
+}

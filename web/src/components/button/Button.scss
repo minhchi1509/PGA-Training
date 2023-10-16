@@ -1,0 +1,61 @@
+@use 'src/themes/variables' as *;
+
+.Button {
+  font-family: 'Poppins-500';
+
+  &.ant-btn {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    line-height: 21px;
+    border-radius: 10px;
+    padding-top: 12.5px;
+    padding-bottom: 12.5px;
+
+    &-circle {
+      border-radius: 50%;
+    }
+
+    // size
+    &-sm {
+      padding: 8.5px 16px; // check padding button again
+    }
+
+    &-lg {
+      padding-top: 15.5px;
+      padding-bottom: 15.5px;
+      font-size: $font-size-default;
+    }
+
+    // customize
+    &.noBorder {
+      border-style: none;
+      @include button-shadow;
+
+      &.ant-btn {
+        &-sm {
+          padding-top: 9.5px;
+          padding-bottom: 9.5px;
+        }
+      }
+    }
+
+    // type
+    &-default {
+      border-color: $border-default-color;
+    }
+
+    &-link {
+      color: $color-primary;
+      padding: 0;
+    }
+
+    &-primary {
+      &:disabled {
+        border-style: none;
+      }
+    }
+  }
+}

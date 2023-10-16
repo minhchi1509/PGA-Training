@@ -1,0 +1,58 @@
+@use 'src/themes/variables' as *;
+
+.SingleMessage {
+  margin-top: 6px;
+
+  &__timeline {
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 15px;
+    color: $font-color-caption;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 4px;
+  }
+
+  &__text {
+    width: fit-content;
+    padding: 5px 16px;
+    border-radius: 12px;
+    background-color: $grey;
+
+    &.own {
+      margin-left: 100px;
+    }
+
+    &.other {
+      margin-right: 100px;
+    }
+  }
+
+  &.own {
+    margin-left: auto;
+  }
+
+  &__quickFiles {
+    margin-bottom: 6px;
+  }
+
+  .SingleMessage__partner-details {
+    width: 100%;
+  }
+
+  &__partner {
+    display: flex;
+    align-items: flex-start;
+    gap: 6px;
+
+    &.showAvt {
+      margin-top: 10px;
+    }
+
+    &.hideAvt {
+      .SingleMessage__partner-details {
+        margin-left: 38px;
+      }
+    }
+  }
+}

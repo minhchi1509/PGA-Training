@@ -1,0 +1,9 @@
+@use 'src/themes/variables' as *;
+
+.AssignedTaskList {
+  &__item {
+    &:not(:first-child) {
+      margin-top: 6px;
+    }
+  }
+}

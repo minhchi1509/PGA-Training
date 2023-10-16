@@ -1,0 +1,61 @@
+@use 'src/themes/variables' as *;
+
+.MedicalProfile {
+  padding: 0;
+
+  &__loading {
+    display: block;
+    margin: 20px auto;
+  }
+  .content {
+    display: flex;
+    border-bottom: 1px solid $border-default-color;
+
+    .history {
+      padding: 20px;
+      flex: 1;
+      padding-right: 20px;
+      border-right: 1px solid $border-default-color;
+
+      &__title {
+        margin-bottom: 16px;
+      }
+
+      &-row {
+        display: flex;
+        flex-direction: row;
+        gap: 16px;
+
+        .FormItem {
+          width: 100%;
+        }
+      }
+
+      .area-input {
+        height: 100px !important;
+        resize: none !important;
+      }
+    }
+
+    .engagement {
+      flex: 1;
+      padding: 20px;
+      gap: 16px;
+
+      &__title {
+        margin-bottom: 16px;
+      }
+    }
+  }
+
+  .footer {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    padding: 20px;
+
+    .Button {
+      width: 160px;
+    }
+  }
+}
